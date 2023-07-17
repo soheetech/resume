@@ -1,2 +1,5 @@
-url: https://soheetech.github.io
-baseurl: /resume
+# Settings
+
+locale: "ko-KR"
+url: "https://soheetech.github.io"
+baseurl: "/resume"

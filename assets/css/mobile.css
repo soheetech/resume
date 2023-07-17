@@ -1,0 +1,12 @@
+/* mobile */
+
+/* grid */
+[class^="grid"] {
+  width: 100%;
+}
+
+
+/* layout */
+#w {
+  max-width: 90%;
+}

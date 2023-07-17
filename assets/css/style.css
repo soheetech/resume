@@ -123,7 +123,7 @@ span.type,
 p.list-square, 
 #skills li, 
 #licenses li {
-  background: url('../images/ico_square.png') no-repeat left 0.65rem;
+  background: url('/assets/images/ico_square.png') no-repeat left 0.65rem;
   padding-left: 16px;
 }
 

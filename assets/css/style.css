@@ -117,7 +117,7 @@ span.type,
 .license-date {
   display: inline-block;
   vertical-align: text-top;
-  background: var(--font-color);
+  background: var(--bg-green);
   color: white;
   font-weight: normal;
   font-size: 0.8rem;

@@ -63,7 +63,7 @@ small::before {
   background-color: white;
   max-width: calc(840px + 2rem);
   margin: 100px auto;
-  padding: 60px 3rem 50px;
+  padding: 60px 3rem;
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
 }
 

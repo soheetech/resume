@@ -6,10 +6,16 @@
 }
 
 
+/* pdf download button */
+#btn-pdf {
+  max-width: 90%;
+  margin-top: 5vh;
+}
+
+
 /* layout */
 #w {
   max-width: 90%;
-  margin-top: 5vh;
   margin-bottom: 5vh;
   padding-left: 2rem;
   padding-right: 2rem;

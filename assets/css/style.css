@@ -48,7 +48,8 @@ strong {
 
 small, 
 .date,
-article.contact li {
+article.contact li,
+#btn-pdf a {
   font-size: 0.9rem;
 }
 
@@ -64,11 +65,37 @@ small::before {
 }
 
 
+/* pdf download button */
+#btn-pdf {
+  max-width: calc(840px + 2rem);
+  text-align: right;
+  margin: 100px auto 0;
+}
+
+#btn-pdf,
+#btn-pdf a {
+  color: var(--font-gray);
+}
+
+#btn-pdf a {
+  border: 0;
+}
+
+#btn-pdf a:hover {
+  color: var(--font-color);
+}
+
+#btn-pdf i {
+  margin-right: 6px;
+  font-size: 1rem;
+}
+
+
 /* layout */
 #w {
   background-color: white;
   max-width: calc(840px + 2rem);
-  margin: 100px auto;
+  margin: 20px auto 100px;
   padding: 60px 3rem;
   box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);
 }

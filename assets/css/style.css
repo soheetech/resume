@@ -8,7 +8,7 @@
 }
 
 ::selection {
-  background-color: var(--bg-green);
+  background-color: var(--bg-gray-blue);
   color: white;
 }
 
@@ -19,7 +19,7 @@ body {
   line-height: 1.6;
   letter-spacing: -0.02em;
   color: var(--font-color);
-  padding: 15vh 0;
+  padding: 12vh 0;
 }
 
 a {
@@ -143,7 +143,7 @@ h1 {
 h2 {
   font-size: 1.65rem;
   font-weight: bold;
-  margin: 60px 0 20px;
+  margin: 60px 0 30px;
 }
 
 h2.hello {
@@ -152,6 +152,7 @@ h2.hello {
   line-height: 1.4;
   letter-spacing: -0.04em;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h2.hello::after {
@@ -190,6 +191,8 @@ h4.decmt {
   padding: 0 6px;
   margin-right: 6px;
   border-radius: 6px;
+  vertical-align: text-top;
+  height: 19px;
 }
 
 .ico {
@@ -225,14 +228,14 @@ h4.decmt {
 
 .timeline {
   position: relative;
-  padding-left: 80px;
+  padding-left: 60px;
   padding-top: 28px;
 }
 
 .timeline::before {
   position: absolute;
   top: 0;
-  left: 19px;
+  left: 5px;
   content: '';
   display: block;
   width: 1px;
@@ -248,7 +251,7 @@ h4.decmt {
 .timeline > li::before {
   position: absolute;
   top: 10px;
-  left: -65px;
+  left: -59px;
   content: '';
   display: block;
   width: 9px;
@@ -259,7 +262,7 @@ h4.decmt {
 
 .timeline.flexul li > div:first-child {
   min-width: 200px;
-  width: 34%;
+  width: 33%;
   flex-shrink: 0;
 }
 
@@ -269,7 +272,7 @@ h4.decmt {
 }
 
 .contact li {
-  margin-right: 24px;
+  margin-right: 28px;
 }
 
 .vision li {

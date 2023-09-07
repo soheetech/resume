@@ -1,17 +1,15 @@
 /* mobile */
 
 /* grid */
-[class^="grid"] {
+[class^='grid'] {
   width: 100%;
 }
-
 
 /* pdf download button */
 #btn-pdf {
   max-width: 90%;
   margin-top: 5vh;
 }
-
 
 /* layout */
 #w {

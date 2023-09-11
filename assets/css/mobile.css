@@ -36,6 +36,9 @@
   margin-top: 4px;
 }
 
-h2.hello {
-  width: 295px;
+h2.hello strong::before {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
 }

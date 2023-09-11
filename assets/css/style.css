@@ -24,6 +24,29 @@ body {
 
 a {
   color: var(--font-color);
+  position: relative;
+}
+
+a:hover::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #ffe400;
+  border-radius: 7px;
+  height: 7px;
+  animation: hoverbar 0.3s forwards ease-in-out;
+  z-index: -1;
+  bottom: 3px;
+  opacity: 0.4;
+}
+
+@keyframes hoverbar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 a::after {
@@ -33,6 +56,7 @@ a::after {
 }
 
 #btn-pdf a::after,
+#btn-pdf a:hover::before,
 .copyright a::after {
   display: none;
 }
@@ -147,6 +171,14 @@ small::before {
   width: 50%;
 }
 
+.flex.half li:nth-child(odd) {
+  padding-right: 1rem;
+}
+
+.flex.half li:nth-child(even) {
+  padding-left: 1rem;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -254,7 +286,7 @@ h4 {
 
 .timeline {
   position: relative;
-  padding-left: 60px;
+  padding-left: 55px;
   padding-top: 28px;
 }
 
@@ -277,7 +309,7 @@ h4 {
 .timeline > li::before {
   position: absolute;
   top: 11px;
-  left: -59px;
+  left: -54px;
   content: '';
   display: block;
   width: 9px;
@@ -291,8 +323,8 @@ h4 {
 }
 
 .timeline.flexul li > div:first-child {
-  min-width: 200px;
-  width: 33%;
+  min-width: 220px;
+  width: 32%;
   flex-shrink: 0;
 }
 
@@ -306,7 +338,8 @@ h4 {
 }
 
 .vision li,
-.contact.dot {
+.contact.dot,
+.thanks {
   font-size: 1.125rem;
   line-height: 1.7;
 }
@@ -333,8 +366,4 @@ h4 {
 .copyright,
 .copyright a {
   color: var(--font-gray);
-}
-
-.copyright a:hover {
-  color: var(--font-color);
 }

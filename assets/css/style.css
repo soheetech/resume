@@ -77,11 +77,12 @@ small::before {
 #btn-pdf {
   text-align: right;
   position: relative;
-  right: -10px;
 }
 
 #btn-pdf svg {
   width: 160px;
+  position: relative;
+  right: -10px;
 }
 
 #btn-pdf a {
@@ -90,7 +91,7 @@ small::before {
   height: 140px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 0;
   color: white;
   border: 0;
   text-align: center;

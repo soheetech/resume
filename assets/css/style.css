@@ -20,44 +20,32 @@ body {
   letter-spacing: -0.02em;
   color: var(--font-color);
   padding: 12vh 0 0;
+  min-width: 365px;
+  word-wrap: break-word;
 }
 
 a {
   color: var(--font-color);
-  position: relative;
 }
 
-a:hover::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  background-color: #ffe400;
-  border-radius: 7px;
-  height: 7px;
-  animation: hoverbar 0.3s forwards ease-in-out;
-  z-index: -1;
-  bottom: 3px;
-  opacity: 0.4;
+a > span {
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(to top, rgba(255, 228, 0, 0.4) 60%, transparent 40%);
+  transition: 0.2s all ease-in-out;
+  border-radius: 40% 20%;
 }
 
-@keyframes hoverbar {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+a:hover > span {
+  background-size: 100% 100%;
 }
 
-a::after {
+a > span::after {
   content: '↗';
-  vertical-align: revert;
   margin-left: 4px;
 }
 
-#btn-pdf a::after,
-#btn-pdf a:hover::before,
-.copyright a::after {
+.copyright a > span::after {
   display: none;
 }
 
@@ -189,6 +177,7 @@ header {
   backdrop-filter: blur(7px);
   z-index: 99;
   line-height: 60px;
+  overflow: hidden;
 }
 
 h1 {

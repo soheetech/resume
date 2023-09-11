@@ -1,20 +1,38 @@
 /* mobile */
 
-/* grid */
-[class^='grid'] {
-  width: 100%;
-}
-
-/* pdf download button */
-#btn-pdf {
-  max-width: 90%;
-  margin-top: 5vh;
-}
-
 /* layout */
-#w {
-  max-width: 90%;
-  margin-bottom: 5vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.w {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+/* list */
+.flex,
+.flexul li {
+  flex-wrap: wrap;
+}
+
+.flex.fullm li,
+.flex.half li {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.flex.half li:nth-child(odd) {
+  padding-right: 0;
+}
+
+.flex.half li:nth-child(even) {
+  padding-left: 0;
+}
+
+.dec {
+  margin-top: 20px;
+}
+
+.license-date + strong {
+  width: 100%;
+  margin-top: 4px;
 }

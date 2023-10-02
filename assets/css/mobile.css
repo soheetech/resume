@@ -6,6 +6,10 @@
   padding: 0 2rem;
 }
 
+#topbtn {
+  right: 2rem;
+}
+
 /* list */
 .flex,
 .flexul li {

@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/mobile.css" media="screen and (max-width: 900px)" />
+
+    <!-- js -->
+    <script src="./assets/js/shortcut.js"></script>
   </head>
   <body>
     <header>
@@ -64,7 +67,7 @@
         </a>
       </div>
       <!-- 프로필 -->
-      <section>
+      <section id="Introduce">
         <h2 class="hello">반갑습니다, 👋🏻<br />풀스택 개발자 <strong>문소희</strong>입니다</h2>
         <!-- 연락처, 링크 -->
         <ul class="contact flex fullm">
@@ -93,7 +96,7 @@
         </ul>
       </section>
       <!-- 경험 -->
-      <section>
+      <section id="Experience">
         <h2>Experience</h2>
         <ul class="timeline flexul">
           <li>
@@ -218,7 +221,7 @@
         </ul>
       </section>
       <!-- 교육 -->
-      <section>
+      <section id="Education">
         <h2>Education</h2>
         <ul class="timeline flexul">
           <li>
@@ -310,7 +313,7 @@
         </ul>
       </section>
       <!-- 기술 -->
-      <section>
+      <section id="Skills">
         <h2>Skills</h2>
         <ul>
           <li>
@@ -371,7 +374,7 @@
         </ul>
       </section>
       <!-- 자격 -->
-      <section class="certificates">
+      <section id="Certificates" class="certificates">
         <h2>Certificates</h2>
         <ul class="flexul acenter timeline">
           <li><span class="type license-date">2023.07</span><strong>SQL 개발자(SQLD)</strong></li>
@@ -383,7 +386,7 @@
         </ul>
       </section>
       <!-- 인사 -->
-      <section>
+      <footer>
         <h2>Thank You!</h2>
         <p class="thanks">더 궁금하신 내용이 있다면 아래 이메일로 연락 부탁드립니다.<br />감사합니다.</p>
         <!-- 연락처, 링크 -->
@@ -409,10 +412,17 @@
             </strong>
           </li>
         </ul>
-      </section>
+      </footer>
       <p class="copyright">
         &copy; 2023. <a href="https://github.com/soheetech" target="_blank"><span>문소희(Sohee Moon)</span></a> All rights reserved.
       </p>
     </div>
+    <ul id="shortcut" class="timeline">
+      <li class="shortcut Introduce active"><a href="#Introduce">Introduce</a></li>
+      <li class="shortcut Experience"><a href="#Experience">Experience</a></li>
+      <li class="shortcut Education"><a href="#Education">Education</a></li>
+      <li class="shortcut Skills"><a href="#Skills">Skills</a></li>
+      <li class="shortcut Certificates"><a href="#Certificates">Certificates</a></li>
+    </ul>
   </body>
 </html>

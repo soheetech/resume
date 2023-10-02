@@ -356,6 +356,10 @@ h4 {
   -webkit-backdrop-filter: blur(7px);
 }
 
+#topbtn a:hover {
+  border-style: dashed;
+}
+
 /* profile */
 .contact {
   margin: 24px 0;

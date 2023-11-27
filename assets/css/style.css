@@ -313,11 +313,18 @@ h4 {
   margin: 1rem 0 1.2rem;
 }
 
-.linkwrapper li {
+.linkwrapper li a {
+  display: block;
   border: 1px solid #ddd;
   padding: 4px 8px;
   font-size: 0.9375rem;
   border-radius: 4px;
+}
+
+.linkwrapper li a:hover {
+  border-color: var(--bg-green);
+  color: white;
+  background-color: var(--bg-green);
 }
 
 /* shortcut */
